@@ -1,0 +1,117 @@
+.segundoPlano{
+    height: 221px;
+    width: 1080px;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.4) 100%), url('/img/fondo-segundoPlano.png');
+    margin: auto;
+    position: relative;
+    
+
+    animation: animFondo 50s linear infinite;
+}
+
+
+
+.primerPlano{
+    height: 221px;
+    width: 1080px;
+    background-image: url('/img/fondo-primePlano.png');
+    margin: auto;
+    position: relative;
+
+    animation: animFondo 25s linear infinite;
+}
+
+.logo img{
+    width: 139px;
+    height: 80px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.personaje{
+    height: 48px;
+    width: 53px;
+    background-image: url('/img/idle-alien-transparente.png');
+    margin: auto;
+    position: absolute;
+    left: 45%;
+    top: 65%;
+
+    animation: idle 1s steps(16) infinite;
+}
+
+.personaje1{
+    height: 43px;
+    margin: auto;
+    position: absolute;
+    left: 65%;
+    top: 68%;
+
+    animation: idleS .9s infinite;
+}
+
+@keyframes idle {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 849px;
+    }
+}
+
+@keyframes idleS {
+    0%{
+        width: 44px;
+    background-image: url('/img/running-soldier/11-44x43.png');
+    }
+    9.09%{
+        width: 44px;
+    background-image: url('/img/running-soldier/10-44x43.png');
+    }
+    18.18%{
+        width: 43px;
+    background-image: url('/img/running-soldier/09-43x43.png');
+    }
+    27.27%{
+        width: 44px;
+    background-image: url('/img/running-soldier/08-44x43.png');
+    }
+    36.36%{
+        width: 43px;
+    background-image: url('/img/running-soldier/07-43x43.png');
+    }
+    45.45%{
+        width: 44px;
+    background-image: url('/img/running-soldier/06-44x43.png');
+    }
+    54.54%{
+        width: 44px;
+    background-image: url('/img/running-soldier/05-44x43.png');
+    }
+    63.63%{
+        width: 41px;
+    background-image: url('/img/running-soldier/04-41x43.png');
+    }
+    72.72%{
+        width: 40px;
+    background-image: url('/img/running-soldier/03-40x43.png');
+    }
+    81.81%{
+        width: 39px;
+    background-image: url('/img/running-soldier/02-39x43.png');
+    }
+    100%{
+        width: 40px;
+    background-image: url('/img/running-soldier/01-40x43.png');
+    }
+}
+
+@keyframes animFondo {
+    0%{
+        background-position: -1080px;
+    }
+    100%{
+        background-position: 0px;
+    }
+}
